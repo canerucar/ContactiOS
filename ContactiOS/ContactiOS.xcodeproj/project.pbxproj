@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		9C7AD72D23C13D1500B45180 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7AD72C23C13D1500B45180 /* AppDelegate.swift */; };
-		9C7AD73123C13D1500B45180 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7AD73023C13D1500B45180 /* ViewController.swift */; };
-		9C7AD73423C13D1500B45180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7AD73223C13D1500B45180 /* Main.storyboard */; };
 		9C7AD73623C13D1700B45180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7AD73523C13D1700B45180 /* Assets.xcassets */; };
 		9C7AD73923C13D1700B45180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7AD73723C13D1700B45180 /* LaunchScreen.storyboard */; };
+		9C7AD74423C13DB500B45180 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7AD74323C13DB500B45180 /* HomeInteractor.swift */; };
+		9C7AD74623C13DC200B45180 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7AD74523C13DC200B45180 /* HomePresenter.swift */; };
+		9C7AD74823C13DD800B45180 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7AD74723C13DD800B45180 /* HomeProtocols.swift */; };
+		9C7AD74A23C13DE600B45180 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7AD74923C13DE600B45180 /* HomeRouter.swift */; };
+		9C7AD74C23C13DF200B45180 /* HomeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7AD74B23C13DF200B45180 /* HomeTableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C7AD72923C13D1500B45180 /* ContactiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7AD72C23C13D1500B45180 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C7AD73023C13D1500B45180 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9C7AD73323C13D1500B45180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C7AD73523C13D1700B45180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C7AD73823C13D1700B45180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C7AD73A23C13D1700B45180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C7AD74323C13DB500B45180 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		9C7AD74523C13DC200B45180 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		9C7AD74723C13DD800B45180 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		9C7AD74923C13DE600B45180 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		9C7AD74B23C13DF200B45180 /* HomeTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		9C7AD72B23C13D1500B45180 /* ContactiOS */ = {
 			isa = PBXGroup;
 			children = (
-				9C7AD72C23C13D1500B45180 /* AppDelegate.swift */,
-				9C7AD73023C13D1500B45180 /* ViewController.swift */,
-				9C7AD73223C13D1500B45180 /* Main.storyboard */,
-				9C7AD73523C13D1700B45180 /* Assets.xcassets */,
-				9C7AD73723C13D1700B45180 /* LaunchScreen.storyboard */,
 				9C7AD73A23C13D1700B45180 /* Info.plist */,
+				9C7AD74223C13D8000B45180 /* Supports */,
+				9C7AD74123C13D7B00B45180 /* UI */,
+				9C7AD74023C13D7400B45180 /* Home */,
 			);
 			path = ContactiOS;
+			sourceTree = "<group>";
+		};
+		9C7AD74023C13D7400B45180 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9C7AD74323C13DB500B45180 /* HomeInteractor.swift */,
+				9C7AD74523C13DC200B45180 /* HomePresenter.swift */,
+				9C7AD74723C13DD800B45180 /* HomeProtocols.swift */,
+				9C7AD74923C13DE600B45180 /* HomeRouter.swift */,
+				9C7AD74B23C13DF200B45180 /* HomeTableController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9C7AD74123C13D7B00B45180 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9C7AD74223C13D8000B45180 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				9C7AD72C23C13D1500B45180 /* AppDelegate.swift */,
+				9C7AD73523C13D1700B45180 /* Assets.xcassets */,
+				9C7AD73723C13D1700B45180 /* LaunchScreen.storyboard */,
+			);
+			path = Supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +157,6 @@
 			files = (
 				9C7AD73923C13D1700B45180 /* LaunchScreen.storyboard in Resources */,
 				9C7AD73623C13D1700B45180 /* Assets.xcassets in Resources */,
-				9C7AD73423C13D1500B45180 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +167,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C7AD73123C13D1500B45180 /* ViewController.swift in Sources */,
+				9C7AD74C23C13DF200B45180 /* HomeTableController.swift in Sources */,
+				9C7AD74423C13DB500B45180 /* HomeInteractor.swift in Sources */,
+				9C7AD74A23C13DE600B45180 /* HomeRouter.swift in Sources */,
+				9C7AD74823C13DD800B45180 /* HomeProtocols.swift in Sources */,
 				9C7AD72D23C13D1500B45180 /* AppDelegate.swift in Sources */,
+				9C7AD74623C13DC200B45180 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9C7AD73223C13D1500B45180 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C7AD73323C13D1500B45180 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9C7AD73723C13D1700B45180 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
